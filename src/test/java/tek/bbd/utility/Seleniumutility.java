@@ -1,7 +1,6 @@
 package tek.bbd.utility;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -9,7 +8,7 @@ import tek.bbd.base.Basesetup;
 
 import java.time.Duration;
 
-public class seleniumutility extends Basesetup {
+public class Seleniumutility extends Basesetup {
 
     private WebDriverWait getWait() {
         return new WebDriverWait(getDriver(), Duration.ofSeconds(20));
