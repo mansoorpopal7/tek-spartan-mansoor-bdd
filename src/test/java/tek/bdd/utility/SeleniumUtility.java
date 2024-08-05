@@ -32,5 +32,9 @@ public class SeleniumUtility extends Basesetup {
         return waitForVisibility(locator).isEnabled();
     }
 
+    public boolean iselementdiplayed(By locator) {
+        return waitForVisibility(locator).isDisplayed();
+    }
+
 
 }

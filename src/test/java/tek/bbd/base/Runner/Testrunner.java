@@ -6,8 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:features/SetupTest.feature",
-        glue = "tek.bbd.base.steps"
+        features = "classpath:features/SecurityTest.feature",
+        glue = "tek.bbd.base.steps",
+        dryRun = false
+
 )
 public class Testrunner {
 }
