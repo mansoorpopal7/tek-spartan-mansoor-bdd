@@ -15,18 +15,18 @@ public class SecurityTestSteps extends SeleniumUtility {
     }
     @Then("validate user is in sign in page")
     public void validate_user_is_in_sign_in_page() {
-        String pagesubtitle = getElementText(HomePage.ACCOUNT_LINK);
+        String pagesubtitle = getElementText(SignInPage.PAGE_SUBTITLE);
         Assert.assertEquals("Sign in", pagesubtitle);
     }
     @When("user enter username and password and click on login")
     public void user_enter_username_and_password_and_click_on_login() {
-          sentText(SignInPage.PAGE_SUBTITLE, "mnsrpopal1@gmail.com");
-          sentText(SignInPage.EMAIL_INPUT, "Kbl00135!");
+          sentText(SignInPage.EMAIL_INPUT, "mnsrpopal1@gmail.com");
+          sentText(SignInPage.PASSWORD_INPUT, "Kbl00135!");
           clickOnElement(SignInPage.LOGIN_BUTTON);
     }
     @Then("user should be able to see account link")
     public void user_should_be_able_to_see_account_link() {
-               boolean isaccountdisplayed = iselementdiplayed(By.id("accountLink"));
+               boolean isaccountdisplayed = iselementdiplayed(HomePage.ACCOUNT_LINK);
                Assert.assertTrue(isaccountdisplayed);
     }
 
