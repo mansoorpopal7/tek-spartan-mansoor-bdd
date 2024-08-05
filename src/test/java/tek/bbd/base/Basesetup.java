@@ -17,6 +17,7 @@ public class Basesetup {
     public void quitBrowser() {
         if(driver != null) {
             driver.quit();
+
         }
     }
     public WebDriver getDriver() {

@@ -8,8 +8,8 @@ import tek.bdd.utility.SeleniumUtility;
 
 public class setupTeststeps extends SeleniumUtility {
 
-    @Given("open browser and navigate to retail app")
-    public void openBrowserandnavigate() {
+   @Given("open browser and navigate to retail app")
+   public void openBrowserandnavigate() {
         setupBrowser();
     }
     @Then("validate top left corner")
@@ -18,7 +18,7 @@ public class setupTeststeps extends SeleniumUtility {
         Assert.assertEquals("TEKSCHOOL", topleftcornertext);
     }
     @Then("close the browser")
-    public void closeBrowser() {
+   public void closeBrowser() {
         quitBrowser();
     }
 }
