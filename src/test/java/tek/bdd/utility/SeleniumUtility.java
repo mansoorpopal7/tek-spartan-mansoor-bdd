@@ -1,6 +1,8 @@
 package tek.bdd.utility;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -35,6 +37,10 @@ public class SeleniumUtility extends Basesetup {
     public boolean iselementdiplayed(By locator) {
         return waitForVisibility(locator).isDisplayed();
     }
+   public byte[] takeScreenShot() {
+        TakesScreenshot screenshot = (TakesScreenshot) getDriver();
+        return screenshot.getScreenshotAs(OutputType.BYTES);
+   }
 
 
 }
