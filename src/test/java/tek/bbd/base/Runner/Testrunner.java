@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "classpath:features",
         glue = "tek.bbd.base.steps",
         dryRun = false,
-        tags = "@Smoke",
+        tags = "@UsingList",
         plugin = {
             "html:target/cucumber_report/index.html"
         }
